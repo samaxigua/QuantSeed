@@ -1,0 +1,9 @@
+# QuantSeed 依赖
+# 最小依赖（演示数据开箱即跑）：
+numpy>=1.26
+pandas>=2.0
+matplotlib>=3.8
+scipy>=1.11
+
+# 真实 A 股数据（推荐装）：
+akshare>=1.12
