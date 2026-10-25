@@ -1,7 +1,0 @@
-CSI300 2023-01-03 ~ 2026-10-23, B&H +5.59%
-
-ma_cross               ret= -6.41% sharpe=-0.33 maxdd=-20.25% win=11.1% trades=9
-rsi_revert             ret=+11.81% sharpe= 0.11 maxdd=-21.43% win=66.7% trades=3
-donchian_breakout      ret= +7.02% sharpe=-0.01 maxdd=-15.26% win=30.8% trades=13
-rsi_with_stops         ret= +5.89% sharpe=-0.09 maxdd= -7.80% win=66.7% trades=9
-ensemble_voting        ret= +2.65% sharpe=-0.13 maxdd=-12.02% win=38.5% trades=13
