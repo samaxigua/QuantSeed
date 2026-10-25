@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>QuantSeed — AI 量化研究框架</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+         background: #0d1117; color: #e6edf3; line-height: 1.6; }
+  .hero { max-width: 900px; margin: 0 auto; padding: 80px 24px 40px; text-align: center; }
+  .hero h1 { font-size: 48px; font-weight: 800; letter-spacing: -1px;
+             background: linear-gradient(135deg, #58a6ff, #bc8cff);
+             -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero p.subtitle { font-size: 18px; color: #8b949e; margin-top: 16px; }
+  .badges { margin-top: 24px; }
+  .badge { display: inline-block; padding: 4px 12px; border-radius: 20px;
+           font-size: 13px; margin: 0 4px; background: #21262d; color: #8b949e; }
+  .grid { max-width: 900px; margin: 40px auto; padding: 0 24px;
+          display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
+  .card { background: #161b22; border: 1px solid #30363d; border-radius: 8px;
+          padding: 20px; text-align: center; }
+  .card .num { font-size: 28px; font-weight: 700; }
+  .card .label { font-size: 13px; color: #8b949e; margin-top: 4px; }
+  .pos { color: #3fb950; } .neg { color: #f85149; }
+  section { max-width: 900px; margin: 40px auto; padding: 0 24px; }
+  section h2 { font-size: 22px; margin-bottom: 16px; color: #58a6ff; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { padding: 10px 12px; border-bottom: 1px solid #30363d; text-align: right; }
+  th { color: #8b949e; font-weight: 500; }
+  td:first-child, th:first-child { text-align: left; }
+  img { width: 100%; border-radius: 8px; margin: 16px 0; border: 1px solid #30363d; }
+  .btn { display: inline-block; padding: 12px 24px; border-radius: 6px;
+         text-decoration: none; font-weight: 600; margin: 8px; }
+  .btn-primary { background: #238636; color: #fff; }
+  .btn-secondary { background: #21262d; color: #58a6ff; border: 1px solid #30363d; }
+  .cta { text-align: center; margin: 60px 0; }
+  footer { text-align: center; padding: 40px; color: #484f58; font-size: 13px; }
+</style>
+</head>
+<body>
+  <div class="hero">
+    <h1>QuantSeed</h1>
+    <p class="subtitle">给软件工程学生的第一颗量化种子<br/>
+    一个能跑、能读、能改的 AI 量化研究框架</p>
+    <div class="badges">
+      <span class="badge">Python 3.13</span>
+      <span class="badge">pandas / numpy</span>
+      <span class="badge">akshare 真实 A 股</span>
+      <span class="badge">AI 协作 Prompt</span>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card"><div class="num pos">+11.8%</div><div class="label">RSI 策略累计收益<br/>(2023-2026)</div></div>
+    <div class="card"><div class="num pos">+5.6%</div><div class="label">买入持有基准</div></div>
+    <div class="card"><div class="num">5</div><div class="label">策略对照实验</div></div>
+    <div class="card"><div class="num">920</div><div class="label">真实交易日</div></div>
+  </div>
+
+  <section>
+    <h2>策略表现（沪深300，2023-01 ~ 2026-10）</h2>
+    <table>
+      <tr><th>策略</th><th>累计收益</th><th>夏普</th><th>最大回撤</th><th>胜率</th><th>交易数</th></tr>
+      <tr><td>买入持有</td><td class="pos">+5.59%</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+      <tr><td><b>RSI 均值回归</b></td><td class="pos">+11.81%</td><td>0.11</td><td class="neg">-21.43%</td><td>66.7%</td><td>3</td></tr>
+      <tr><td>唐奇安突破</td><td class="pos">+7.02%</td><td>-0.01</td><td class="neg">-15.26%</td><td>30.8%</td><td>13</td></tr>
+      <tr><td>RSI+止损（改进）</td><td class="pos">+5.89%</td><td>-0.09</td><td class="pos">-7.80%</td><td>66.7%</td><td>9</td></tr>
+      <tr><td>AI 投票组合</td><td class="pos">+2.65%</td><td>-0.13</td><td class="neg">-12.02%</td><td>38.5%</td><td>13</td></tr>
+      <tr><td>双均线趋势</td><td class="neg">-6.41%</td><td>-0.33</td><td class="neg">-20.25%</td><td>11.1%</td><td>9</td></tr>
+    </table>
+    <img src="assets/comparison.png" alt="策略净值对比"/>
+  </section>
+
+  <section>
+    <h2>这个项目教会你什么</h2>
+    <p>没有圣杯策略。RSI 在震荡市跑赢，趋势策略在下跌市被反复打脸。
+    加止损能把回撤从 -21% 压到 -7.8%，但收益也会砍半——这就是真实的交易 trade-off。</p>
+  </section>
+
+  <div class="cta">
+    <a class="btn btn-primary" href="report.html">查看完整回测报告</a>
+    <a class="btn btn-secondary" href="https://github.com/samaxigua/QuantSeed">GitHub 仓库</a>
+  </div>
+
+  <footer>
+    QuantSeed · 为 20 岁的软件工程学生而作 · 数据来源：新浪财经 via akshare
+  </footer>
+</body>
+</html>

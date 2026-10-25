@@ -18,7 +18,7 @@ sys.path.insert(0, str(PROJECT_ROOT))
 from quant_seed.config import BacktestConfig, RESULTS_DIR
 from quant_seed.data import load_prices
 from quant_seed.strategies import (
-    MACross, RSIMeanRevert, DonchianBreakout, EnsembleVoting,
+    MACross, RSIMeanRevert, DonchianBreakout, RSIWithStops, EnsembleVoting,
 )
 from quant_seed.backtest import run_backtest, compute_performance
 from quant_seed.viz import (
@@ -47,6 +47,7 @@ def main(source: str = "demo", symbol: str = "000300",
         MACross(fast=20, slow=60),
         RSIMeanRevert(),
         DonchianBreakout(),
+        RSIWithStops(),
         EnsembleVoting(),
     ]
 
