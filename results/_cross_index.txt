@@ -1,0 +1,16 @@
+
+=== CSI300 (000300) 2023-01-03~2026-10-23 ===
+B&H: +5.59%
+ma_cross               ret= -6.41% sharpe=-0.33 maxdd=-20.25% win=11.1% trades=9
+rsi_revert             ret=+11.81% sharpe= 0.11 maxdd=-21.43% win=66.7% trades=3
+donchian_breakout      ret= +7.02% sharpe=-0.01 maxdd=-15.26% win=30.8% trades=13
+rsi_with_stops         ret= +5.89% sharpe=-0.09 maxdd= -7.80% win=66.7% trades=9
+ensemble_voting        ret= +2.65% sharpe=-0.13 maxdd=-12.02% win=38.5% trades=13
+
+=== ChiNext (399006) 2023-01-03~2026-10-23 ===
+B&H: +13.91%
+ma_cross               ret= -0.67% sharpe=-0.10 maxdd=-36.57% win=42.9% trades=7
+rsi_revert             ret=-25.46% sharpe=-0.54 maxdd=-41.46% win=50.0% trades=2
+donchian_breakout      ret=+30.65% sharpe= 0.25 maxdd=-21.77% win=28.6% trades=14
+rsi_with_stops         ret=+12.63% sharpe= 0.14 maxdd=-18.65% win=80.0% trades=15
+ensemble_voting        ret=-11.74% sharpe=-0.27 maxdd=-35.02% win=30.8% trades=13
